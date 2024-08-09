@@ -2041,34 +2041,60 @@ footer {
 
 
 
-.mobiletooglemanu {
+.mobiletogglemenu {
     position: fixed;
     top: 0;
-    right: -100%; /* Hide off-screen by default */
+    right: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  
-  .show-toggle-menu {
-    right: 0; /* Slide in from the right when active */
-  }
-  
-  /* Optional: Ensure content is centered */
-  .mobile-navbar-tabs-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .mobiletogglemenu.show-toggle-menu {
+    transform: translateX(0);
+  }
+  
+  .mobilemenu-header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  #close-menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mobile-navbar-tabs-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
   
   .mobile-navbar-tabs-li {
     margin: 20px 0;
   }
+  
+  .mobile-navbar-tabs-li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .mobile-navbar-tabs-li a:hover {
+    color: #ff0000;
+  }
+  
   

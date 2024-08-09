@@ -44,20 +44,21 @@ function hamburgerMenu() {
       .classList.toggle("hamburger-animation3");
 }
 function hidemenubyli() {
-  document.body.classList.toggle("stopscrolling"),
-    document
-      .getElementById("mobiletogglemenu")
-      .classList.remove("show-toggle-menu"),
-    document
-      .getElementById("burger-bar1")
-      .classList.remove("hamburger-animation1"),
-    document
-      .getElementById("burger-bar2")
-      .classList.remove("hamburger-animation2"),
-    document
-      .getElementById("burger-bar3")
-      .classList.remove("hamburger-animation3");
+  document.body.classList.toggle("stopscrolling");
+  document
+    .getElementById("mobiletogglemenu")
+    .classList.remove("show-toggle-menu");
+  document
+    .getElementById("burger-bar1")
+    .classList.remove("hamburger-animation1");
+  document
+    .getElementById("burger-bar2")
+    .classList.remove("hamburger-animation2");
+  document
+    .getElementById("burger-bar3")
+    .classList.remove("hamburger-animation3");
 }
+
 const sections = document.querySelectorAll("section"),
   navLi = document.querySelectorAll(".navbar .navbar-tabs .navbar-tabs-ul li"),
   mobilenavLi = document.querySelectorAll(
